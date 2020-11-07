@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>Stylish Social Buttons</title>
+
+<!--图标库-->
+<link rel="stylesheet" href="https://www.jq22.com/jquery/font-awesome.4.7.0.css">
+
+<!--核心样式-->
+<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+
+
+</head>
+<body>
+
+  <div class="social-btns">
+    <a class="btn darkblue" ontouchstart="x(0,'upleft')" ontouchend="x(1,'upleft')" href="javascript:;"><i  style="transform:rotate(90deg);-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);" class="fa fa-location-arrow"></i></a>
+    <a class="btn blue"  ontouchstart="run(0,'up')" ontouchend="run(1,'up')" href="javascript:;"><i class="fa fa-hand-o-up"></i></a>
+    <a class="btn organ"  ontouchstart="x(0,'upright')" ontouchend="x(1,'upright')" href="javascript:;"><i  style="transform:rotate(0deg);-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);" class="fa fa-location-arrow"></i></a>
+
+    <p></p>
+    <a class="btn darkblue" ontouchstart="run(0,'left')" ontouchend="run(1,'left')" href="javascript:;"><i class="fa fa-hand-o-left"></i></a>
+    <a class="btn blue" ontouchstart="stop()" href="javascript:;"><i class="fa fa-ban"></i></a>
+    <a class="btn organ" ontouchstart="run(0,'right')" ontouchend="run(1,'right')" href="javascript:;"><i class="fa fa-hand-o-right"></i></a>
+
+    <p></p>
+    <a class="btn darkblue" ontouchstart="x(0,'downleft')" ontouchend="x(1,'downleft')" href="javascript:;"><i style="transform:rotate(180deg);-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);" class="fa fa-location-arrow"></i></a>
+    <a class="btn blue" ontouchstart="run(0,'down')" ontouchend="run(1,'down')" href="javascript:;"><i class="fa fa-hand-o-down"></i></a>
+    <a class="btn organ" ontouchstart="x(0,'downright')" ontouchend="x(1,'downright')" href="javascript:;"><i style="transform:rotate(90deg);-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);" class="fa fa-location-arrow"></i></a>
+
+    <p></p>
+    <a class="btn blue" ontouchstart="c(0,'cleft')" ontouchend="c(1,'cleft')" href="javascript:;"><i class="fa fa-undo"></i></a>
+    <a class="btn purple" onclick="yun('yup')" href="javascript:;"><i class="fa fa-arrow-up"></i></a>
+    <a class="btn blue" ontouchstart="c(0,'cright')" ontouchend="c(1,'cright')" href="javascript:;"><i class="fa fa-repeat"></i></a>
+    <p></p>
+    <a class="btn purple" onclick="yun('yleft')" href="javascript:;"><i class="fa fa-arrow-left"></i></a>
+    <a class="btn purple" onclick="yun('ydown')" href="javascript:;"><i class="fa fa-arrow-down"></i></a>
+    <a class="btn purple" onclick="yun('yright')" href="javascript:;"><i class="fa fa-arrow-right"></i></a>
+    <p></p>
+    <a class="btn red" href="javascript:;"><i class="fa fa-camera"></i></a><br>
+    <img style="margin-top:0px;width:70%" src="{{url_for('video_feed')}}"
+    <p class="Copyright">Copyright © 2020 KJ All Rights Reserved</p>
+  </div>
+
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="{{url_for('static', filename='js/re.js')}}"></script>
+</body>
+</html>
